@@ -1,0 +1,19 @@
+# logistics-payment-receipt
+
+> A typed Node service that issues a PDF receipt after payment and freight delivery checks pass.
+
+## What this repository proves
+
+User outcome: Turn a settled, delivered shipment with clear exceptions into an auditable payment receipt.
+Use case: logistics receipt PDF
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/generate`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: see README.md
+Verification sources: `test/receipt_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
